@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<table width="100%" border="0" height="=100%">
+  <tbody>
+    <tr>
+      <th width="800" height="10%" scope="col" alt=""/><img src="file:///C|/STLP_game/gameboard.gif" width="100%" height="50%" alt="" />
+      <table width="100%" border="0" align="bottom">
+        <tbody>
+          <tr>
+            <th height="120" scope="col">
+            <table width="100%" border="0">
+    		<tr width="800" height="100">
+                    <th height="82"><input type="image" onclick="GetTLAAlert('Envision')" src="file:///C|/STLP_Game/Envision.gif" width="100%" alt="submit button" /></th>
+		    <th height="82"><input type="image" onclick="GetTLAAlert('Empower')" src="file:///C|/STLP_Game/Empower.gif" width="100%"  alt="submit button" /></th>
+              <th height="82"><input type="image" onclick="GetTLAAlert('Innovate')" src="file:///C|/STLP_Game/Innovate.gif" width="100%"  alt="submit button" /></th>
+		    <th height="82"><input type="image" onclick="GetTLAAlert('Connect')" src="file:///C|/STLP_Game/Connect.gif" width="100%"  alt="submit button" /></th>
+              <th height="82"><input type="image" onclick="GetTLAAlert('Influence')" src="file:///C|/STLP_Game/Influence.gif" width="100%"  alt="submit button" /></th> 
+              <th height="82"><input type="image" onclick="GetTLAAlert('BeCourageous')" src="file:///C|/STLP_Game/becourageous.gif" width="100%"  alt="submit button" /></th> 
+                </tr>
+           </table>
+</th>
+          </tr>
+        
+    </table>
+      <p>&nbsp;</p>
+        </th>
+      <th width="39%" scope="col" halign="top">
+
+       <table width="100%" height="115%" border="0">
+        <tbody>
+          <tr>
+            <th scope="col"><table width="100%" border="0">
+              <tbody>
+                <tr>
+                  <th width="2%" scope="col"></th>
+                  <th width="42%" scope="col"><input type="image" onclick="GetOrangecard(0)" src="file:///C|/STLP_Game/OrangeDeckCard.gif" width="153" height="202" alt="submit button" align="center" />
+<script>
+function GetTLAAlert(tlavalue){ 
+if (tlavalue == 'Envision') { var WinOpen = window.open("", "MsgWindow", "width=500,height=300");
+    WinOpen.document.write("<TITLE>Envision Help</TITLE><p width='400'><strong>Craft the unifying vision for success that inspires action across individuals and organizations</strong><br><br>Define the vision, drive engagement, and deliver impact that reaches beyond the immediate need and scales to address future trends <br><br>Incorporate and synthesize all available insights, data and experiences to generate new possibilities <br><br>Leverage opportunities, constraints, and alignment of goals to deliver customer delight</p>");
+     }
+else if (tlavalue == 'Innovate')  { var WinOpen = window.open("", "MsgWindow", "width=500,height=300");
+    WinOpen.document.write("<TITLE>Innovate Help</TITLE><p width='400'><strong>Grow landscape of opportunity by inspiring a culture of optimism, creativity and growth</strong><br><br> Embrace the growth mindset and insatiable curiosity to avoid complacency and explore the undiscovered<br><br> Ideate without boundaries and challenge the status quo to convert creative ideas into viable ventures<br><br> Encourage the surfacing of new ideas and untested hypotheses to identify opportunities and insights early</p>");
+     }
+else if (tlavalue == 'Empower')  { var WinOpen = window.open("", "MsgWindow", "width=500,height=300");
+    WinOpen.document.write("<TITLE>Empower Help</TITLE><p width='400'><strong>Intentionally live out Microsoft's mission and lead others to do the same</strong><br><br>Ignite an infectious excitement in peers and colleagues to contribute to the success of others<br><br>Foster an environment to bring out the best in people by enabling each to find meaning in their work<br><br>Manifest the expectation to grow and make others great</p>");
+     }
+else if (tlavalue == 'Connect')  { var WinOpen = window.open("", "MsgWindow", "width=500,height=300");
+    WinOpen.document.write("<TITLE>Connect Help</TITLE><p width='400'><strong>Actively seek different perspectives to build trust and strengthen relationships</strong><br><br>Communicate with empathy and respect to ensure diverse opinions, strengths, and perspectives are heard and incorporated into broad strategy <br><br>Unify teams around members' strengths to rally towards outcomes that scale impact beyond the sum of individual potential <br><br>Leverage the breadth and depth of One Microsoft for customers' success </p>");
+     }
+else if (tlavalue == 'Influence')  { var WinOpen = window.open("", "MsgWindow", "width=500,height=300");
+    WinOpen.document.write("<TITLE>Influence Help</TITLE><p width='400'><strong>Impact positive change without authority </strong><br><br>Develop intentional strategies to achieve a clear and shared vision <br><br>Grow a network of trusted relationships across a broad ecosystem of connections and resources  <br><br>Use trust, credibility and confidence to guide others </p>");
+     }
+else if (tlavalue == 'BeCourageous')  { var WinOpen = window.open("", "MsgWindow", "width=500,height=300");
+    WinOpen.document.write("<TITLE>Be Courageous Help</TITLE><p width='400'><strong>Tenaciously pursue the right, meaningful outcomes early and often to build ongoing momentum</strong><br><br>Lead through change, uncertainty and risk to deliver impact with emotional honesty and confidence<br><br>Embrace a humble and beginner's mindset to see vulnerabilities as opportunities<br><br>Model daily continuous personal accountability</p>");
+     }
+else { var WinOpen = window.open("", "MsgWindow", "width=500,height=300");
+    WinOpen.document.write("<TITLE>Help</TITLE><p width='400'><strong>Grow landscape of opportunity by inspiring a culture of optimism, creativity and growth</strong><br><br> Embrace the growth mindset and insatiable curiosity to avoid complacency and explore the undiscovered<br><br> Ideate without boundaries and challenge the status quo to convert creative ideas into viable ventures<br><br> Encourage the surfacing of new ideas and untested hypotheses to identify opportunities and insights early</p>");
+     }
+}
+var CardValue = 1;
+var NextOrangeCardValue=1;
+var NextGreenCardValue=1;
+var NextYellowCardValue=1;
+var NextPinkCardValue=1;
+var NextPurpleCardValue=1;
+function GetOrangecard(CardValue) { 
+    if (CardValue === undefined) {
+          document.getElementById('cardInfo').innerHTML = "ERROR"; } 
+    else { CardValueOriginal=CardValue+1;
+	    CardNumber=NextOrangeCardValue;
+	    if  (CardValueOriginal == 1 && NextOrangeCardValue == 1){ document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/OrangeCard1.gif' /> "; }
+	    else if(CardNumber == 2){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/OrangeCard2.gif' /> "; }
+            else if(CardNumber == 3){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/OrangeCard3.gif' /> "; }
+            else if(CardNumber == 4){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/OrangeCard4.gif' /> "; }
+            else if(CardNumber == 5){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/OrangeCard5.gif' /> "; }
+    	    else if(CardNumber == 6){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/OrangeCard6.gif' /> "; }
+            else { document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/OrangeCard1.gif' /> "; }
+	}
+NextOrangeCardValue = NextOrangeCardValue+1;
+   if (NextOrangeCardValue > 6) { NextOrangeCardValue = 1; }
+CardNumber=1;
+}
+
+function GetGreencard(CardValue) { 
+    if (CardValue === undefined) {
+          document.getElementById('cardInfo').innerHTML = "ERROR"; } 
+    else { CardValueOriginal=CardValue+1;
+	    CardNumber=NextGreenCardValue;
+	    if  (CardValueOriginal == 1 && NextGreenCardValue == 1){ document.getElementById('cardInfo').innerHTML = " <img src='file:///C:/STLP_Game/GreenCard1.gif' /> "; }
+	    else if(CardNumber == 2){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/GreenCard2.gif' /> "; }
+            else if(CardNumber == 3){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/GreenCard3.gif' /> "; }
+            else if(CardNumber == 4){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/GreenCard4.gif' /> "; }
+            else if(CardNumber == 5){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/GreenCard5.gif' /> "; }
+    
+            else { document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/GreenCard1.gif' /> "; }
+	}
+NextGreenCardValue = NextGreenCardValue+1;
+if (NextGreenCardValue > 5) { NextGreenCardValue = 1; }
+CardNumber=1;
+}
+
+function GetYellowcard(CardValue) { 
+    if (CardValue === undefined) {
+          document.getElementById('cardInfo').innerHTML = "ERROR"; } 
+    else { CardValueOriginal=CardValue+1;
+	    CardNumber=NextYellowCardValue;
+	    if  (CardValueOriginal == 1 && NextYellowCardValue == 1){ document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/YellowCard1.gif' /> "; }
+	    else if(CardNumber == 2){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/YellowCard2.gif' /> "; }
+            else if(CardNumber == 3){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/YellowCard3.gif' /> "; }
+            else if(CardNumber == 4){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/YellowCard4.gif' /> "; }
+            else if(CardNumber == 5){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/YellowCard5.gif' /> "; }
+    	    else if(CardNumber == 6){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/YellowCard6.gif' /> "; }
+            else { document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/YellowCard1.gif' /> "; }
+	}
+NextYellowCardValue = NextYellowCardValue+1;
+   if (NextYellowCardValue > 6) { NextYellowCardValue = 1; }
+CardNumber=1;
+}
+
+function GetPinkcard(CardValue) { 
+    if (CardValue === undefined) {
+          document.getElementById('cardInfo').innerHTML = "ERROR"; } 
+    else { CardValueOriginal=CardValue+1;
+	    CardNumber=NextPinkCardValue;
+	    if  (CardValueOriginal == 1 && NextPinkCardValue == 1){ document.getElementById('cardInfo').innerHTML = " <img src='file:///C:/STLP_Game/PinkCard1.gif' /> "; }
+	    else if(CardNumber == 2){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/PinkCard2.gif' /> "; }
+            else if(CardNumber == 3){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/PinkCard3.gif' /> "; }
+            else if(CardNumber == 4){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/PinkCard4.gif' /> "; }
+            else if(CardNumber == 5){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/PinkCard5.gif' /> "; }
+    	    else if(CardNumber == 6){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/PinkCard6.gif' /> "; }
+            else { document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/PinkCard1.gif' /> "; }
+	}
+NextPinkCardValue = NextPinkCardValue+1;
+   if (NextPinkCardValue > 6) { NextPinkCardValue = 1; }
+CardNumber=1;
+}
+
+function GetPurplecard(CardValue) { 
+    if (CardValue === undefined) {
+          document.getElementById('cardInfo').innerHTML = "ERROR"; } 
+    else { CardValueOriginal=CardValue+1;
+	    CardNumber=NextPurpleCardValue;
+	    if  (CardValueOriginal == 1 && NextPurpleCardValue == 1){ document.getElementById('cardInfo').innerHTML = " <img src='file:///C:/STLP_Game/PurpleCard1.gif' /> "; }
+	    else if(CardNumber == 2){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/PurpleCard2.gif' /> "; }
+            else if(CardNumber == 3){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/PurpleCard3.gif' /> "; }
+            else if(CardNumber == 4){document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/PurpleCard4.gif' /> "; }
+       
+    	  
+            else { document.getElementById('cardInfo').innerHTML = "<img src='file:///C:/STLP_Game/PurpleCard1.gif' /> "; }
+	}
+NextPurpleCardValue = NextPurpleCardValue+1;
+   if (NextPurpleCardValue > 4) { NextPurpleCardValue = 1; }
+CardNumber=1;
+}
+
+</script>
+
+		  </th>
+                  <th width="3%" scope="col">&nbsp;</th>
+                  <th width="18%" scope="col"><input type="image" onclick="GetYellowcard(0)" src="file:///C|/STLP_Game/YellowDeckCard.gif" width="153" height="202" alt="submit button" /></th>
+                  <th width="11%" scope="col">&nbsp;</th>
+                  <th width="11%" scope="col">&nbsp;<input type="image" onclick="GetPinkcard(0)" src="file:///C|/STLP_Game/PinkDeckCard.gif" width="153" height="202" alt="submit button" /></th>
+                  <th width="12%" scope="col">&nbsp;</th>
+                </tr>
+              </tbody>
+            </table></th>
+          </tr>
+          
+          <tr>
+            <th height="400" scope="row"><p id="cardInfo">&nbsp; </p>
+            <table width="100%" border="0">
+              <tbody>
+                <tr>
+                  <th width="56%" scope="col">      
+</th>
+
+<font size="80">
+<th width="44%" scope="col">
+<script>
+var DieValue = 2;
+var seconds = 60;
+var minutes=0;
+var PickCardRolled="Orange";
+function RollDiceFunction(dieValue)
+{
+    if (dieValue === undefined) {
+          document.getElementById('dice').innerHTML = DieValue; 
+    } 
+    else { 
+           DieValue=Math.floor((Math.random() * 3)+1);
+           if (DieValue == 1) {PickCardRolled="Orange";}
+	   if (DieValue == 2) {PickCardRolled="Yellow";}
+           if (DieValue == 3) {PickCardRolled="Pink";}
+           if (DieValue == 4) {PickCardRolled="Orange";}
+	   if (DieValue == 5) {PickCardRolled="Green";}
+           if (DieValue == 6) {PickCardRolled="Orange";}
+        document.getElementById('dice').innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pick "+ PickCardRolled +" card";   
+    }
+    seconds=60; 
+    while (seconds >=0){
+       minutes = Math.round((seconds-30)/60);
+       var SecondsLeft = seconds--;
+       if (SecondsLeft < 10) { 
+          document.getElementById('timer').innerHTML = minutes + "here2:0" + remainingSeconds; 
+          seconds=seconds-1;
+       }
+       else if (seconds == 0) {
+          clearInterval(countdownTimer);
+          document.getElementById('timer').innerHTML = "here3 00:00";
+       } 
+       else {  document.getElementById('timer').innerHTML = minutes + "her1:" + remainingSeconds; 
+       }
+    }
+}
+
+</script></th>
+                </tr>
+<tr>
+            <th scope="row"><table width="100%" border="0">
+              <tbody>
+                <tr>
+                  
+                  <th width="2%" scope="col">&nbsp;</th>
+                  <th width="26%" scope="col">&nbsp;&nbsp;</th>
+                  <th width="2%" scope="col">&nbsp;</th>
+                  <th width="26%" scope="col">&nbsp;</th>
+<th width="2%" scope="col">&nbsp;</th>
+                  <th width="41%" align="left" scope="col">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="image" onclick="RollDiceFunction(2)" src="file:///C|/STLP_Game/RollDie.gif" width="100" height="100" value="Roll Die" alt="submit button"/>
+<p id="dice">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Roll Die</p>
+ </th>
+                  <th width="1%" scope="col">&nbsp;</th>
+                </tr>
+              </tbody>
+            </table></th>
+          </tr>
+              </tbody>
+            </table></th>
+          </tr>
+          <tr>
+            <th scope="row">&nbsp;</th>
+          </tr>
+        </tbody>
+      </table></th>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
