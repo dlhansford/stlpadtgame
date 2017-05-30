@@ -5,10 +5,10 @@
 <title>Untitled Document</title>
 </head>
 <body>
-<table width="100%" border="0" height="=100%" align="top">
+<table width="100%" border="0" height="=100%">
   <tbody>
     <tr>
-      <th width="800" height="100%" scope="col" alt=""/><img src="file:///C|/STLP_game/gameboard.gif" width="100%" height="100%" alt="" />
+      <th width="800" height="10%" scope="col" alt=""/><img src="file:///C|/STLP_game/gameboard.gif" width="100%" height="50%" alt="" />
       <table width="100%" border="0" align="bottom">
         <tbody>
           <tr>
@@ -28,18 +28,18 @@
     <p>&nbsp;</p>
     </th>
     <th width="39%" scope="col" halign="top">
-       <table width="100%" height="100%" border="0">
+       <table width="100%" height="115%" border="0">
         <tbody>
           <tr>
             <th scope="col"><table width="100%" border="0">
               <tbody>
                 <tr>
                   <th width="2%" scope="col"></th>
-                  <th width="42%" scope="col"><input type="image" onclick="GetOrangecard(0)" src="file:///C|/STLP_Game/OrangeDeckCard.gif" width="225" height="270" alt="submit button" align="center" /></th>
+                  <th width="42%" scope="col"><input type="image" onclick="GetOrangecard(0)" src="file:///C|/STLP_Game/OrangeDeckCard.gif" width="153" height="202" alt="submit button" align="center" /></th>
                   <th width="3%" scope="col">&nbsp;</th>
-                  <th width="18%" scope="col"><input type="image" onclick="GetYellowcard(0)" src="file:///C|/STLP_Game/YellowDeckCard.gif" width="225" height="270" alt="submit button" /></th>
+                  <th width="18%" scope="col"><input type="image" onclick="GetYellowcard(0)" src="file:///C|/STLP_Game/YellowDeckCard.gif" width="153" height="202" alt="submit button" /></th>
                   <th width="11%" scope="col">&nbsp;</th>
-                  <th width="11%" scope="col"><input type="image" onclick="GetPinkcard(0)" src="file:///C|/STLP_Game/PinkDeckCard.gif" width="225" height="270" alt="submit button" /></th>
+                  <th width="11%" scope="col"><input type="image" onclick="GetGreencard(0)" src="file:///C|/STLP_Game/GreenDeckCard.gif" width="153" height="202" alt="submit button" /></th>
                   <th width="12%" scope="col">&nbsp;</th>
                 </tr>
               </tbody>
@@ -49,11 +49,16 @@
             <th scope="row"><table width="100%" border="0">
               <tbody>
                 <tr>
-                  
                   <th width="2%" scope="col">&nbsp;</th>
-                  <th width="31%" scope="col"><input type="image" onclick="RollDiceFunction(2)" src="file:///C|/STLP_Game/RollDie.gif" width="153" height="153" value="Roll Die" alt="submit button"/></th>
+                  <th width="31%" scope="col">&nbsp;&nbsp;<input type="image" onclick="GetPurplecard(0)" src="file:///C|/STLP_Game/PurpleDeckCard.gif" width="153" height="202" alt="submit button" /></th>
                   <th width="2%" scope="col">&nbsp;</th>
-                  <th width="31%" align="left" scope="col"><p id="dice">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></th>
+                  <th width="31%" scope="col"><input type="image" onclick="GetPinkcard(0)" src="file:///C|/STLP_Game/PinkDeckCard.gif" width="153" height="202" alt="submit button" /></th>
+                  <th width="2%" scope="col">&nbsp;</th>
+                  <th width="31%" align="left" scope="col">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="image" onclick="RollDiceFunction(2)" src="file:///C|/STLP_Game/RollDie.gif" width="75" height="75" value="Roll Die" alt="submit button"/>
+<p id="dice">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Roll Die</p>
+<p id="timer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00:00</p>
+<input type="button" value="Start Timer" onclick="StartTimerFunction(60)"/>
+ </th>
                   <th width="1%" scope="col">&nbsp;</th>
                 </tr>
               </tbody>
@@ -209,11 +214,8 @@ function RollDiceFunction(dieValue)
       if (dieValue === undefined) {
           document.getElementById('dice').innerHTML = DieValue; 
     } 
-    else { DieValue=Math.floor((Math.random() * 3)+1);
-        if (DieValue==1){ ChooseCardColor="Orange"; document.getElementById('dice').innerHTML = "<img src='file:///C:/STLP_Game/PickOrangeChip.gif' /> ";}
-        else if (DieValue==2){ ChooseCardColor="Yellow"; document.getElementById('dice').innerHTML = "<img src='file:///C:/STLP_Game/PickYellowChip.gif' /> ";}
-        else if (DieValue==3){ ChooseCardColor="Pink"; document.getElementById('dice').innerHTML = "<img src='file:///C:/STLP_Game/PickPinkChip.gif' /> ";}
-        
+    else { DieValue=Math.floor((Math.random() * 6)+1);
+        document.getElementById('dice').innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Move "+ DieValue +" spaces";   
     } 
 }
 
