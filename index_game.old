@@ -22,7 +22,6 @@
                                         <th height="82"><input type="image" onclick="GetTLAAlert('Innovate')" src="STLP_Game/Innovate.gif" width="100%" alt="submit button" /></th>
                                         <th height="82"><input type="image" onclick="GetTLAAlert('Connect')" src="STLP_Game/Connect.gif" width="100%" alt="submit button" /></th>
                                         <th height="82"><input type="image" onclick="GetTLAAlert('Influence')" src="STLP_Game/Influence.gif" width="100%" alt="submit button" /></th>
-                                        <th height="82"><input type="image" onclick="GetTLAAlert('BeCourageous')" src="STLP_Game/BeCourageous.gif" width="100%" alt="submit button" /></th>
                                     </tr>
                                 </table>
                             </th>
@@ -110,10 +109,7 @@
                 WinOpen.document.write("<TITLE>Connect Help</TITLE><p width='400'><strong>Actively seek different perspectives to build trust and strengthen relationships</strong><br><br>Communicate with empathy and respect to ensure diverse opinions, strengths, and perspectives are heard and incorporated into broad strategy <br><br>Unify teams around members' strengths to rally towards outcomes that scale impact beyond the sum of individual potential <br><br>Leverage the breadth and depth of One Microsoft for customers' success </p>");
             } else if (tlavalue == 'Influence') {
                 var WinOpen = window.open("", "MsgWindow", "width=500,height=300");
-                WinOpen.document.write("<TITLE>Influence Help</TITLE><p width='400'><strong>Impact positive change without authority </strong><br><br>Develop intentional strategies to achieve a clear and shared vision <br><br>Grow a network of trusted relationships across a broad ecosystem of connections and resources  <br><br>Use trust, credibility and confidence to guide others </p>");
-            } else if (tlavalue == 'BeCourageous') {
-                var WinOpen = window.open("", "MsgWindow", "width=500,height=300");
-                WinOpen.document.write("<TITLE>Be Courageous Help</TITLE><p width='400'><strong>Tenaciously pursue the right, meaningful outcomes early and often to build ongoing momentum </strong><br><br>Lead through change, uncertainty and risk to deliver impact with emotional honesty and confidence. <br><br>Embrace a humble and beginner's mindset to see vulnerabilities as opportunities. <br><br> Model daily continuous personal accountability. </p>");
+                WinOpen.document.write("<TITLE>Connect Help</TITLE><p width='400'><strong>Impact positive change without authority </strong><br><br>Develop intentional strategies to achieve a clear and shared vision <br><br>Grow a network of trusted relationships across a broad ecosystem of connections and resources  <br><br>Use trust, credibility and confidence to guide others </p>");
             } else {
                 var WinOpen = window.open("", "MsgWindow", "width=500,height=300");
                 WinOpen.document.write("<TITLE>Help</TITLE><p width='400'><strong>Grow landscape of opportunity by inspiring a culture of optimism, creativity and growth</strong><br><br> Embrace the growth mindset and insatiable curiosity to avoid complacency and explore the undiscovered<br><br> Ideate without boundaries and challenge the status quo to convert creative ideas into viable ventures<br><br> Encourage the surfacing of new ideas and untested hypotheses to identify opportunities and insights early</p>");
